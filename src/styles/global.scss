@@ -1,0 +1,28 @@
+@use './tokens' as *;
+
+page {
+  min-height: 100%;
+  background: $color-bg;
+  color: $color-text;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+}
+
+view,
+text,
+input,
+button,
+scroll-view {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 1;
+
+  &::after {
+    border: 0;
+  }
+}

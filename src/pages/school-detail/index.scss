@@ -1,0 +1,20 @@
+.detail-page {
+  min-height: 100vh;
+  padding: 92px 20px 32px;
+  background: #fff;
+}
+
+.detail-gallery {
+  height: 148px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(20, 200, 200, 0.18), rgba(255, 255, 255, 0.72));
+  border: 1px solid rgba(20, 200, 200, 0.2);
+}
+
+.detail-title {
+  display: block;
+  margin-top: 22px;
+  color: #172326;
+  font-size: 24px;
+  font-weight: 700;
+}

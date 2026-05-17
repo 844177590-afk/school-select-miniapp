@@ -1,0 +1,57 @@
+{
+  "brand": {
+    "name": "青择校",
+    "slogan": "搜学校 搜专业",
+    "tone": ["极简", "克制", "高级感", "轻量", "高信任感"]
+  },
+  "visualKeywords": ["留白", "半透明", "液态玻璃", "白色背景", "青色主题", "无阅读压力", "类夸克 APP", "Apple 级细节"],
+  "colors": {
+    "primary": "#14C8C8",
+    "primaryDeep": "#07999B",
+    "primarySoft": "rgba(20, 200, 200, 0.10)",
+    "glass": "rgba(20, 200, 200, 0.16)",
+    "glassBorder": "rgba(20, 200, 200, 0.24)",
+    "background": "#FFFFFF",
+    "text": "#172326",
+    "textSecondary": "#6B7A7D",
+    "textMuted": "#A6B0B3",
+    "line": "rgba(23, 35, 38, 0.08)"
+  },
+  "radius": {
+    "searchBox": 26,
+    "schoolCard": 22,
+    "aiCard": 28,
+    "image": 16,
+    "pill": 999,
+    "bottomAction": 999
+  },
+  "shadows": {
+    "searchBox": "0 12px 30px rgba(20, 200, 200, 0.20)",
+    "schoolCard": "0 10px 24px rgba(7, 153, 155, 0.08)",
+    "aiCard": "0 18px 42px rgba(20, 200, 200, 0.18)"
+  },
+  "glassStyle": {
+    "background": "linear-gradient(135deg, rgba(20, 200, 200, 0.20), rgba(255, 255, 255, 0.72))",
+    "border": "1px solid rgba(20, 200, 200, 0.24)",
+    "backdropFilter": "blur(18px)",
+    "allowedComponents": ["GlassTag", "AIReportCard", "GlassActionBar"]
+  },
+  "pages": {
+    "home": {
+      "mustHave": ["安全留白", "主标题", "搜索框", "最多 5 个热词", "大量留白"],
+      "mustNotHave": ["底部导航", "推荐学校", "信息流", "招生广告"]
+    },
+    "schools": {
+      "mustHave": ["搜索框", "筛选栏", "学校卡片", "查看详情文字入口"],
+      "filters": ["地区", "学费", "专业", "资质", "类型"],
+      "density": "一屏至少 3 个学校"
+    },
+    "schoolDetail": {
+      "mustHave": ["图片组", "学校名称", "玻璃标签", "AI 解读报告", "关键数据", "热门专业", "多维评分", "底部打分按钮"],
+      "aiReportPriority": "highest",
+      "ratingStyle": ["A+ 评分体系", "五边形评分图", "主题色分数"]
+    }
+  },
+  "figmaStructure": ["Design Tokens", "Components", "Page/Home", "Page/Schools", "Page/SchoolDetail", "Page/Splash"]
+}
+

@@ -1,0 +1,67 @@
+.home-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.home-safe {
+  height: 108px;
+}
+
+.home-main {
+  padding: 96px 44px 0;
+}
+
+.home-title {
+  display: block;
+  color: #07999b;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.home-search {
+  height: 64px;
+  margin-top: 34px;
+  padding: 0 8px 0 24px;
+  border: 1px solid rgba(20, 200, 200, 0.28);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(20, 200, 200, 0.2);
+}
+
+.home-placeholder {
+  color: #a6b0b3;
+  font-size: 16px;
+}
+
+.home-search-action {
+  width: 54px;
+  height: 48px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #14c8c8;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.home-tags {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-tag {
+  padding: 7px 13px;
+  border: 1px solid rgba(20, 200, 200, 0.16);
+  border-radius: 999px;
+  background: rgba(20, 200, 200, 0.08);
+  color: #07999b;
+  font-size: 13px;
+}

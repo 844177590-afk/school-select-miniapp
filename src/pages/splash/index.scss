@@ -1,0 +1,29 @@
+.splash-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.splash-logo {
+  width: 104px;
+  height: 104px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #14c8c8, #07999b);
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  box-shadow: 0 18px 42px rgba(20, 200, 200, 0.22);
+}
+
+.splash-name {
+  margin-top: 22px;
+  color: #172326;
+  font-size: 28px;
+  font-weight: 600;
+}

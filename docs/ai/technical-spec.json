@@ -1,0 +1,106 @@
+{
+  "project": {
+    "name": "青择校",
+    "originalName": "陕职在线",
+    "type": "wechat-mini-program",
+    "positioning": "陕西职业学校真实性查询与 AI 择校参考工具",
+    "coreScope": ["搜索", "筛选", "列表", "详情"],
+    "forbiddenScope": ["收藏", "个人中心", "发现", "推荐", "社区", "动态", "底部导航", "招生营销"]
+  },
+  "techStack": {
+    "framework": "Taro 4",
+    "uiRuntime": "React",
+    "language": "TypeScript",
+    "style": "SCSS",
+    "target": "WeChat Mini Program",
+    "editor": "Cursor",
+    "previewAndRelease": "微信开发者工具",
+    "designTools": ["Figma", "Stitch"]
+  },
+  "pages": [
+    {
+      "path": "pages/splash/index",
+      "name": "加载授权页",
+      "responsibilities": ["展示 Logo", "检查手机号授权", "进入首页"]
+    },
+    {
+      "path": "pages/home/index",
+      "name": "首页",
+      "responsibilities": ["主标题", "搜索框", "热词"]
+    },
+    {
+      "path": "pages/schools/index",
+      "name": "列表页",
+      "responsibilities": ["搜索", "筛选", "学校卡片列表"]
+    },
+    {
+      "path": "pages/school-detail/index",
+      "name": "详情页",
+      "responsibilities": ["图片组", "学校信息", "AI 解读", "关键数据", "热门专业", "多维评分", "打分入口"]
+    }
+  ],
+  "components": {
+    "base": ["SafeTop", "LogoSplash", "SearchBox", "HotTag", "FilterBar", "FilterSheet", "GlassTag", "GlassActionBar", "EmptyState", "LoadingState"],
+    "business": ["SchoolCard", "SchoolSearchHeader", "SchoolHeroGallery", "SchoolAIInsight", "SchoolKeyMetrics", "SchoolMajorSection", "SchoolScoreSection", "RadarPentagon", "GradeBadge"]
+  },
+  "dataModels": {
+    "School": {
+      "id": "string",
+      "name": "string",
+      "city": "string",
+      "district": "string",
+      "type": "SchoolType",
+      "qualification": "QualificationType",
+      "coverImages": "string[]",
+      "tags": "string[]",
+      "score": "number",
+      "grade": "GradeLevel",
+      "tuitionRange": "TuitionRange",
+      "studentCount": "number?",
+      "campusArea": "string?",
+      "majors": "Major[]",
+      "aiReport": "AIReport",
+      "ratings": "SchoolRatings",
+      "sources": "SourceRecord[]"
+    },
+    "Major": {
+      "id": "string",
+      "name": "string",
+      "category": "string",
+      "tuition": "string?",
+      "duration": "string?",
+      "highlights": "string[]"
+    },
+    "AIReport": {
+      "summary": "string",
+      "strengths": "string[]",
+      "risks": "string[]",
+      "suitableFor": "string[]",
+      "sourceIds": "string[]",
+      "updatedAt": "string"
+    },
+    "SchoolRatings": {
+      "teaching": "number",
+      "environment": "number",
+      "employment": "number",
+      "costPerformance": "number",
+      "publicTrust": "number"
+    }
+  },
+  "apiPlan": [
+    "GET /api/schools",
+    "GET /api/schools/:id",
+    "POST /api/auth/phone",
+    "POST /api/schools/:id/rating"
+  ],
+  "deliveryStages": [
+    "项目初始化",
+    "设计系统落地",
+    "首页与授权",
+    "列表页",
+    "详情页",
+    "联调与真机验证",
+    "上线准备"
+  ]
+}
+
